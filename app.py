@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import gradio as gr
+import os
 from src.custom_chatbot import CustomChatbot
 
 template = """
@@ -55,7 +56,6 @@ with gr.Blocks() as blocks:
                 placeholder=("Please upload document(s) or use existing document store to use the chatbot"),
                 interactive=False,
                 container=False,
-                height=100
             )
 
     with gr.Row():
