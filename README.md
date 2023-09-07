@@ -1,5 +1,3 @@
-# fish-my-pdfs
-
 # QA bot using local PDF files 
 ## Overview
 This repository contains a Proof of Concept (PoC) for a QA chatbot capable of extracting and answering questions about information contained within PDF(s) using the GPT API. Frontend with Gradio. 
