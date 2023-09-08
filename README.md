@@ -10,13 +10,14 @@ For a deeper understanding of how Q&A bots function across various types of docu
 ```
 ├── figs
 │
-├── dev_nbs            
-│   ├── pdf.ipynb
+├── dev_nbs
+│   └── pdf.ipynb
 │
-├── src                  
+├── src
 │   ├── custom_chatbot.py
+│   └── custom_files.py
 │
-├── app.py #gradio app                         
+├── app.py  # gradio app
 │
 └── README.md
 ```        

@@ -3,6 +3,7 @@
 import gradio as gr
 import os
 from src.custom_chatbot import CustomChatbot
+from src.custom_files import CustomFiles
 
 template = """
 You are a knowledge bot. Use the following pieces of context to answer the question at the end. 
@@ -16,11 +17,13 @@ Question: {question}
 
 Helpful answer in Norwegian:
 """
-# Get OpenAI API key, see the readme for more info
-api_key = os.environ.get('OPENAI_API_KEY')
 
-# Create a ChatBot instance
-chatbot_obj = CustomChatbot(api_key, template)
+# Get OpenAI API key, see the readme for more info
+os.environ['OPENAI_API_KEY'] = os.environ.get('OPENAI_API_KEY')
+
+# Create a ChatBot and CustomFiles instances
+custom_files = CustomFiles()
+chatbot_obj = CustomChatbot(template, custom_files)
 
 # Define UI elements and interactions
 with gr.Blocks() as blocks:
