@@ -6,7 +6,7 @@ from src.custom_chatbot import CustomChatbot
 from src.custom_files import CustomFiles
 
 template = """
-You are a knowledge bot. Use the following pieces of context to answer the question at the end. 
+Use the following pieces of context to answer the question at the end. 
 Provide a detailed answer if possible.
 Write at the end that the user is responsible for checking that the information provided is correct (in Norwegian).
 If you don't know the answer, just say that you don't know, don't try to make up an answer.

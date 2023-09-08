@@ -40,7 +40,7 @@ See best practices for API key safety: https://help.openai.com/en/articles/51125
 ### Run the Gradio App
 Launch the Gradio application
 ```bash
-gradio app.py
+python app.py
 ```
 
 ### Optional: 
